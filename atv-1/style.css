@@ -1,58 +1,63 @@
-/* 1. Container do card */
-.card {
-  /* background: (cor ou imagem de fundo); */
-  /* width: (largura fixa ou responsiva); */
-  /* margin: (centralizar no body ou espaçamento externo); */
-  /* border: (largura, estilo, cor); */
-  /* border-radius: (arredondar cantos); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Suez+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Vollkorn";
+    font-size: 30px;
 }
 
-/* 2. Imagem do perfil */
-.card figure img {
-  /* width: 100%; */
-  /* height: auto; */
-  /* display: (bloco); */
+.container {
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* 3. Corpo do card */
-.card-body {
-  /* padding: (espaço interno); */
+/* formatação geral */
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Suez One";
 }
 
-/* 4. Título */
-.card-title {
-  /* font-size: (tamanho do título); */
-  /* font-weight: (negrito ou normal); */
-  /* margin-top: (espaçamento acima do título); */
-  /* margin-bottom: (espaçamento abaixo do título); */
-  /* color: (cor do texto); */
+.hero {
+    background: #f6f6f6;
+    color: #3d537c;
+    font-size: 30px;
+    padding: 210px 0;
+    text-align: center;
 }
 
-/* 5. Subtítulo */
-.card-subtitle {
-  /* font-size: (um pouco menor que o título); */
-  /* font-weight: (peso da fonte); */
-  /* margin-bottom: (espaço antes do parágrafo); */
-  /* color: (cor mais suave); */
+.hero-subtitle {
+    font-weight: bold;
 }
 
-/* 6. Texto descritivo */
-.card-text {
-  /* font-size: (tamanho legível); */
-  /* margin-bottom: (espaço antes do botão); */
-  /* color: (cor do texto principal); */
+.hero-title {
+    font-size: 150px;
 }
 
-/* 7. Botão */
-.card-btn {
-  /* display: (em linha e bloco); */
-  /* padding: (espaço interno do botão); */
-  /* background-color: (cor de fundo do botão); */
-  /* color: (cor do texto do botão); */
-  /* text-decoration: none; */
-  /* text-align: center; */
-  /* font-weight: bold; */
-  /* border-radius: (arredondar cantos); */
+.hero-text {}
+
+/* formatação dos blocos */
+.content-block {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* --- FIM DO CSS SCAFFOLDING --- */
+.direction-coluna {
+    flex-direction: column;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-block h2 {
+    font-size: 60px;
+}
+
+.content-wrapper {
+    width: 50%;
+}
+
+@media celular and (min-width = 600px) {   
+}
